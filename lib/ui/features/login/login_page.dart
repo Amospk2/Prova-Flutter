@@ -36,6 +36,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     const TextForm(
                       maxLengthCheck: 20,
+                      charCheck: true,
                       icon: Icon(Icons.person),
                     ),
                     const SizedBox(

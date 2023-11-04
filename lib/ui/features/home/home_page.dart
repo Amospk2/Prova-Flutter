@@ -28,7 +28,8 @@ class HomePage extends StatelessWidget {
 
     focus.addListener(() {
       if (!focus.hasFocus) {
-        focus.requestFocus();
+        focus.requestFocus(); 
+        focus.consumeKeyboardToken(); 
       }
     });
     final args = ModalRoute.of(context)!.settings.arguments as List<String>?;
